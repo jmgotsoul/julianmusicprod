@@ -62,14 +62,6 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            line-height: 60px;
-            background-color: #f5f5f5;
-        }
         .fa-imdb {
             color: #f3ce13;
         }
@@ -229,41 +221,61 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">JMP Sound Pack 1</h5>
-                    <p class="card-text">A project consisting of 10 patches. Categories are ARP + BPM, Synth Bass, Synth Mono, Synth Poly, and
-                        Textures Playable.</p>
-                    <a id="jmssoundpack1" href="soundpacks/JMP%20Sound%20Pack%201.omnisphere.zip" class="btn btn-primary">Free Download</a>
+                    <div class="row">
+                        <div class="col">
+                            <p class="card-text">A project consisting of 10 patches. Categories are ARP + BPM, Synth Bass, Synth Mono, Synth Poly, and
+                                Textures Playable.</p>
+                        </div>
+                        <div class="col">
+                            <div id="jmpsoundpack1-video" class="iframe-container ht-315">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fGoyEecftV8" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer">
-                    <div id="jmpsoundpack1-video" class="iframe-container ht-315">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fGoyEecftV8" allowfullscreen></iframe>
-                    </div>
+                    <a id="jmssoundpack1" href="soundpacks/JMP%20Sound%20Pack%201.omnisphere.zip" class="btn btn-primary">Free Download</a>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row mt-4">
         <div class="col">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">JMP Sound Pack 2</h5>
-                    <p class="card-text">A project consisting of 10 patches. Categories are ARP + BPM, Pads + Strings, Keyboards, Synth Mono, Synth
-                        Poly, and Textures Playable. Included in this pack is an updated version of the Friction Propeller patch from JMP Sound Pack
-                        1.</p>
-                    <a id="jmpsoundpack2" href="soundpacks/JMP%20Sound%20Pack%202.omnisphere.zip" class="btn btn-primary">Free Download</a>
+                    <div class="row">
+                        <div class="col">
+                            <p class="card-text">A project consisting of 10 patches. Categories are ARP + BPM, Pads + Strings, Keyboards, Synth
+                                Mono, Synth Poly, and Textures Playable. Included in this pack is an updated version of the Friction Propeller
+                                patch from JMP Sound Pack 1.</p>
+                        </div>
+                        <div class="col">
+                            <div id="jmpsoundpack2-video" class="iframe-container ht-315">
+                                <iframe src="https://www.youtube.com/embed/9F84-DkD0qk" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer">
-                    <div id="jmpsoundpack2-video" class="iframe-container ht-315">
-                        <iframe src="https://www.youtube.com/embed/9F84-DkD0qk" allowfullscreen></iframe>
-                    </div>
+                    <a id="jmpsoundpack2" href="soundpacks/JMP%20Sound%20Pack%202.omnisphere.zip" class="btn btn-primary">Free Download</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<footer class="footer">
+<footer class="mt-4">
     <div class="container text-center">
         <div class="copy-right">
-            <a id="eula" class="pr-5" data-toggle="modal" data-target="#licensing" href="#">Licensing Agreement (Royalty Free)</a>
-            <a id="privacy_policy" href="https://www.iubenda.com/privacy-policy/8137856" class="alt-font pl-5" target="_blank">© Julian Montgomery
-                2018</a>
+            <div class="row">
+                <div class="col">
+                    <a id="eula" class="pr-5" data-toggle="modal" data-target="#licensing" href="#">Licensing Agreement (Royalty Free)</a>
+                </div>
+                <div class="col">
+                    <a id="privacy_policy" href="https://www.iubenda.com/privacy-policy/8137856" class="alt-font pl-5" target="_blank">© Julian
+                        Montgomery 2018</a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
