@@ -43,177 +43,194 @@
         }
         .movie-title {
             font-family: 'Limelight', cursive;
+            font-size: 60px;
+        }
+        .bg-dark-10 {
+            background: rgba(0,0,0,0.1);
+        }
+        .bg-dark-30 {
+            background: rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
-<div class="jumbotron mt-2">
-    <h1 class="text-center display-4 movie-title">The Sharp Edge</h1>
-    <div class="row mt-3">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-sm-12"><h1 class="text-center movie-title">The Sharp Edge</h1></div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col"><img src="../img/the_sharp_edge_coming_soon.jpg" alt="Movie Poster" class="rounded mx-auto d-block img-fluid"></div>
         <div class="col">
-            <dl class="row">
-                <dt class="col-sm-4">Director</dt>
-                <dd class="col-sm-8">Walter Hermosa</dd>
-                <dt class="col-sm-4">Expected Release</dt>
-                <dd class="col-sm-8">Spring 2019</dd>
-                <dt class="col-sm-4">Film Length</dt>
-                <dd class="col-sm-8">TBD</dd>
-            </dl>
-            <div class="d-none"><a href="https://www.dropbox.com/sh/fyphx0r78exvb0s/AACMZOQwhp-8OWOp8yevixXva?dl=0"><h4>Dropbox Folder</h4></a></div>
-            <div class="mt-3"><img height="300" width="300" src="../img/the_sharp_edge_coming_soon.jpg" alt="Movie Poster" class="rounded"></div>
-        </div>
-        <div class="col">
-            <h3>Julian Montgomery</h3>
-            <div>
-                <dl class="row">
-                    <dt class="col-sm-2">Phone</dt>
-                    <dd class="col-sm-10">818-281-7773</dd>
-                    <dt class="col-sm-2">Email</dt>
-                    <dd class="col-sm-10"><a href="mailto:julian@julianmusicprod.com">julian@julianmusicprod.com</a></dd>
-                    <dt class="col-sm-2">Website</dt>
-                    <dd class="col-sm-10"><a href="https://www.julianmusicprod.com">https://www.julianmusicprod.com</a></dd>
-                </dl>
-            </div>
-            <div class="btn-group" role="group">
-                <a id="imdb" class="btn" role="button" href="https://www.imdb.me/julianmusicprod" target="_blank"
-                   onclick="trackOutboundLink('https://www.imdb.me/julianmusicprod'); return false;">
-                    <i class="fab fa-imdb fa-2x"></i>
-                </a>
-                <a id="instagram" class="btn" role="button" href="https://instagram.com/julianmusicprod" target="_blank"
-                   onclick="trackOutboundLink('https://instagram.com/julianmusicprod'); return false;">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a id="linkedin" class="btn" role="button" href="https://www.linkedin.com/in/julianmusicprod/" target="_blank"
-                   onclick="trackOutboundLink('https://www.linkedin.com/in/julianmusicprod/'); return false;">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a id="twitter" class="btn" role="button" href="https://twitter.com/julianmusicprod" target="_blank"
-                   onclick="trackOutboundLink('https://twitter.com/julianmusicprod'); return false;">
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                </a>
-                <a id="youtube" class="btn" role="button" href="https://www.youtube.com/channel/UCqek8liBaMN8-n9Ws3RMKEw" target="_blank"
-                   onclick="trackOutboundLink('https://www.youtube.com/channel/UCqek8liBaMN8-n9Ws3RMKEw'); return false;">
-                    <i class="fab fa-youtube fa-2x"></i>
-                </a>
-                <a id="facebook" class="btn" role="button" href="https://facebook.com/julianmusicprod" target="_blank"
-                   onclick="trackOutboundLink('https://facebook.com/julianmusicprod'); return false;">
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 bg-dark-30">
+                        <div class="text-right mt-3 d-none"><a href="#"><h4>Dropbox Folder</h4></a></div>
+                        <dl class="row mt-3">
+                            <dt class="col-sm-4">Director</dt>
+                            <dd class="col-sm-8">Walter Hermosa</dd>
+                            <dt class="col-sm-4">Expected Release</dt>
+                            <dd class="col-sm-8">Spring 2019</dd>
+                            <dt class="col-sm-4">Film Length</dt>
+                            <dd class="col-sm-8">TBD</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 bg-dark-10">
+                        <div class="mt-2">
+                            <h4>Julian Montgomery</h4>
+                            <div>
+                                <dl class="row">
+                                    <dt class="col-sm-2">Phone</dt>
+                                    <dd class="col-sm-10">818-281-7773</dd>
+                                    <dt class="col-sm-2">Email</dt>
+                                    <dd class="col-sm-10"><a href="mailto:julian@julianmusicprod.com">julian@julianmusicprod.com</a></dd>
+                                    <dt class="col-sm-2">Website</dt>
+                                    <dd class="col-sm-10"><a href="https://www.julianmusicprod.com">https://www.julianmusicprod.com</a></dd>
+                                </dl>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a id="imdb" class="btn" role="button" href="https://www.imdb.me/julianmusicprod" target="_blank"
+                                   onclick="trackOutboundLink('https://www.imdb.me/julianmusicprod'); return false;">
+                                    <i class="fab fa-imdb fa-2x"></i>
+                                </a>
+                                <a id="instagram" class="btn" role="button" href="https://instagram.com/julianmusicprod" target="_blank"
+                                   onclick="trackOutboundLink('https://instagram.com/julianmusicprod'); return false;">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a id="linkedin" class="btn" role="button" href="https://www.linkedin.com/in/julianmusicprod/" target="_blank"
+                                   onclick="trackOutboundLink('https://www.linkedin.com/in/julianmusicprod/'); return false;">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a id="twitter" class="btn" role="button" href="https://twitter.com/julianmusicprod" target="_blank"
+                                   onclick="trackOutboundLink('https://twitter.com/julianmusicprod'); return false;">
+                                    <i class="fab fa-twitter-square fa-2x"></i>
+                                </a>
+                                <a id="youtube" class="btn" role="button" href="https://www.youtube.com/channel/UCqek8liBaMN8-n9Ws3RMKEw" target="_blank"
+                                   onclick="trackOutboundLink('https://www.youtube.com/channel/UCqek8liBaMN8-n9Ws3RMKEw'); return false;">
+                                    <i class="fab fa-youtube fa-2x"></i>
+                                </a>
+                                <a id="facebook" class="btn" role="button" href="https://facebook.com/julianmusicprod" target="_blank"
+                                   onclick="trackOutboundLink('https://facebook.com/julianmusicprod'); return false;">
+                                    <i class="fab fa-facebook-square fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="accordion" id="musicComposingAccordion">
-    <div class="card">
-        <div class="card-header" id="concepts">
-            <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseConcepts" aria-expanded="true" aria-controls="collapseConcepts">
-                    CONCEPTS
-                </button>
-            </h2>
-        </div>
-        <div id="collapseConcepts" class="collapse show" aria-labelledby="concepts" data-parent="#musicComposingAccordion">
-            <div class="card-body">
-                <div class="" id="hap-wrapper">
-                    <div class="hap-player-holder">
-                        <div class="hap-player-thumb-wrapper">
-                            <div class="hap-player-thumb"></div>
+    <div class="accordion mt-3" id="musicComposingAccordion">
+        <div class="card">
+            <div class="card-header" id="concepts">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseConcepts" aria-expanded="true" aria-controls="collapseConcepts">
+                        CONCEPTS
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseConcepts" class="collapse show" aria-labelledby="concepts" data-parent="#musicComposingAccordion">
+                <div class="card-body">
+                    <div class="" id="hap-wrapper">
+                        <div class="hap-player-holder">
+                            <div class="hap-player-thumb-wrapper">
+                                <div class="hap-player-thumb"></div>
+                            </div>
+                            <div class="hap-right-cont">
+                                <div class="hap-player-controls">
+                                    <div class="hap-prev-toggle hap-contr-btn"><i class="fas fa-step-backward hap-icon-color"></i></div>
+                                    <div class="hap-playback-toggle hap-contr-btn"><i class="fas fa-play hap-icon-color"></i></div>
+                                    <div class="hap-next-toggle hap-contr-btn"><i class="fas fa-step-forward hap-icon-color"></i></div>
+                                    <div class="hap-volume-wrapper">
+                                        <div class="hap-volume-toggle hap-contr-btn"><i class="fas fa-volume-up hap-icon-color"></i></div>
+                                        <div class="hap-volume-seekbar">
+                                            <div class="hap-volume-bg"></div>
+                                            <div class="hap-volume-level"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hap-seekbar">
+                                    <div class="hap-progress-bg"></div>
+                                    <div class="hap-load-level"></div>
+                                    <div class="hap-progress-level"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="hap-right-cont">
-                            <div class="hap-player-controls">
-                                <div class="hap-prev-toggle hap-contr-btn"><i class="fas fa-step-backward hap-icon-color"></i></div>
-                                <div class="hap-playback-toggle hap-contr-btn"><i class="fas fa-play hap-icon-color"></i></div>
-                                <div class="hap-next-toggle hap-contr-btn"><i class="fas fa-step-forward hap-icon-color"></i></div>
-                                <div class="hap-volume-wrapper">
-                                    <div class="hap-volume-toggle hap-contr-btn"><i class="fas fa-volume-up hap-icon-color"></i></div>
-                                    <div class="hap-volume-seekbar">
-                                        <div class="hap-volume-bg"></div>
-                                        <div class="hap-volume-level"></div>
+                        <div class="hap-playlist-holder">
+                            <div class="hap-playlist-filter-msg"><p>NOTHING FOUND!</p></div>
+                            <div class="hap-playlist-inner">
+                                <div class="hap-playlist-content">
+                                    <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Crying Inside.mp3">
+                                        <a class="hap-playlist-non-selected" href="#">
+                                            <span class="hap-playlist-title">Crying Inside</span>
+                                        </a>
+                                    </div>
+                                    <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Empty.mp3">
+                                        <a class="hap-playlist-non-selected" href="#">
+                                            <span class="hap-playlist-title">Empty</span>
+                                        </a>
+                                    </div>
+                                    <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Silent Pain.mp3">
+                                        <a class="hap-playlist-non-selected" href="#">
+                                            <span class="hap-playlist-title">Silent Pain</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="hap-seekbar">
-                                <div class="hap-progress-bg"></div>
-                                <div class="hap-load-level"></div>
-                                <div class="hap-progress-level"></div>
+                            <div class="hap-preloader"></div>
+                            <div class="hap-bottom-bar">
+                                <div class="text-white pl-2">Concepts created by Julian Montgomery</div>
                             </div>
                         </div>
                     </div>
-                    <div class="hap-playlist-holder">
-                        <div class="hap-playlist-filter-msg"><p>NOTHING FOUND!</p></div>
-                        <div class="hap-playlist-inner">
-                            <div class="hap-playlist-content">
-                                <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Crying Inside.mp3">
-                                    <a class="hap-playlist-non-selected" href="#">
-                                        <span class="hap-playlist-title">Crying Inside</span>
-                                    </a>
-                                </div>
-                                <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Empty.mp3">
-                                    <a class="hap-playlist-non-selected" href="#">
-                                        <span class="hap-playlist-title">Empty</span>
-                                    </a>
-                                </div>
-                                <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Silent Pain.mp3">
-                                    <a class="hap-playlist-non-selected" href="#">
-                                        <span class="hap-playlist-title">Silent Pain</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hap-preloader"></div>
-                        <div class="hap-bottom-bar">
-                            <div class="text-white pl-2">Concepts created by Julian Montgomery</div>
-                        </div>
+                    <div class="">
+                        <h4 class="text-center">Concept Notes</h4>
+                        <table class="table">
+                            <thead class="thead-dark text-uppercase">
+                                <tr>
+                                    <th scope="col">title</th>
+                                    <th scope="note">note</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Crying Inside</td>
+                                    <td>This one has some higher piano. It also has strings, and a light touch of some other orchestral instruments.</td>
+                                </tr>
+                                <tr>
+                                    <td>Silent Pain</td>
+                                    <td>This one users guitar, strings, and piano. It starts off warm yet sad and then turns somewhat dark.</td>
+                                </tr>
+                                <tr>
+                                    <td>Empty</td>
+                                    <td>A very basic concept that attempts to reflect the emptiness within the male character.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div class="">
-                    <h4 class="text-center">Concept Notes</h4>
-                    <table class="table">
-                        <thead class="thead-dark text-uppercase">
-                            <tr>
-                                <th scope="col">title</th>
-                                <th scope="note">note</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Crying Inside</td>
-                                <td>This one has some higher piano. It also has strings, and a light touch of some other orchestral instruments.</td>
-                            </tr>
-                            <tr>
-                                <td>Silent Pain</td>
-                                <td>This one users guitar, strings, and piano. It starts off warm yet sad and then turns somewhat dark.</td>
-                            </tr>
-                            <tr>
-                                <td>Empty</td>
-                                <td>A very basic concept that attempts to reflect the emptiness within the male character.</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="spotting">
-            <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSpotting" aria-expanded="true" aria-controls="collapseConcepts">
-                    SPOTTING
-                </button>
-            </h2>
-        </div>
-        <div id="collapseSpotting" class="collapse show" aria-labelledby="spotting" data-parent="#musicComposingAccordion">
-            <div class="card-body">
-                <div class="mb-4 d-none"><a href="#">Spotting Session Notes</a></div>
-                <div class="d-none">
-                    <h4>Music Spotting Notes</h4>
-                    <dl class="row">
-                        <dd class="col-sm-2">Last Updated</dd>
-                        <dt class="col-sm-10">Day of Week, Month Day Year</dt>
-                    </dl>
-                    <table class="table">
-                        <thead class="thead-dark text-uppercase">
+        <div class="card">
+            <div class="card-header" id="spotting">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSpotting" aria-expanded="true" aria-controls="collapseConcepts">
+                        SPOTTING
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseSpotting" class="collapse show" aria-labelledby="spotting" data-parent="#musicComposingAccordion">
+                <div class="card-body">
+                    <div class="mb-4 d-none"><a href="#">Spotting Session Notes</a></div>
+                    <div class="d-none">
+                        <h4>Music Spotting Notes</h4>
+                        <dl class="row">
+                            <dd class="col-sm-2">Last Updated</dd>
+                            <dt class="col-sm-10">Day of Week, Month Day Year</dt>
+                        </dl>
+                        <table class="table">
+                            <thead class="thead-dark text-uppercase">
                             <tr>
                                 <th scope="col">cue no</th>
                                 <th scope="col">title</th>
@@ -221,8 +238,8 @@
                                 <th scope="col">smpte out</th>
                                 <th scope="col">length</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
+                            <tbody>
                             <tr>
                                 <td>cue no</td>
                                 <td>cue title</td>
@@ -230,8 +247,9 @@
                                 <td>00:00:00:00</td>
                                 <td>00:00</td>
                             </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
