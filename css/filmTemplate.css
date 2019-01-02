@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #3b444b;
+}
+.fa-imdb {
+    color: #f3ce13;
+}
+.fa-instagram {
+    color: #f46f30;
+}
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-twitter-square {
+    color: #1da1f2;
+}
+.fa-youtube {
+    color: #ff0000;
+}
+.fa-facebook-square {
+    color: #3b5998;
+}
+.movie-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.bg-dark-10 {
+    background: rgba(0,0,0,0.1);
+}
+.bg-dark-30 {
+    background: rgba(0,0,0,0.3);
+}
+.movie-poster {
+    min-width: 175px;
+}
