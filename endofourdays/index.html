@@ -34,7 +34,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 bg-dark-30">
-                        <div class="text-right mt-3 d-none"><a href="#"><h4>Dropbox Folder</h4></a></div>
                         <dl class="row mt-3">
                             <dt class="col-sm-3">Director</dt>
                             <dd class="col-sm-9">Tristan Fortier</dd>
@@ -214,7 +213,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card d-none">
             <div class="card-header" id="spotting">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSpotting" aria-expanded="true" aria-controls="collapseConcepts">
@@ -252,6 +251,30 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="card d-none">
+            <div class="card-header" id="cues">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCues" aria-expanded="true"
+                        aria-controls="collapseCues">
+                    CUES
+                </button>
+            </div>
+            <div id="collapseCues" class="collapse show" aria-labelledby="cues" data-parent="#musicComposingAccordion">
+                <div class="card-body">
+                    <div>
+                        To download individual files, execute the following steps:
+                        <ulk>
+                            <li>Click the filename</li>
+                            <li>Click the download arrow</li>
+                        </ulk>
+                    </div>
+                    <div class="mt-2 mb-4">
+                        To download multiple files at once click <a href="https://drive.google.com/drive/folders/FOLDER-ID"
+                                                                    target="_blank">here</a> to go to your Google Drive folder.
+                    </div>
+                    <iframe src="https://drive.google.com/embeddedfolderview?id=FOLDER-ID#list" style="width:100%; height:600px; border:0;"></iframe>
                 </div>
             </div>
         </div>
