@@ -2458,8 +2458,8 @@ p.card-text {
 footer.page-footer {
   background-color: #f5f5f5;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .copy-right a {
   color: #777;
