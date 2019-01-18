@@ -97,7 +97,7 @@
         </div>
     </div>
     <div class="accordion mt-3" id="musicComposingAccordion">
-        <div class="card d-none">
+        <div id="conceptsCard" class="card">
             <div class="card-header" id="concepts">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseConcepts" aria-expanded="true" aria-controls="collapseConcepts">
@@ -107,7 +107,7 @@
             </div>
             <div id="collapseConcepts" class="collapse show" aria-labelledby="concepts" data-parent="#musicComposingAccordion">
                 <div class="card-body">
-                    <div class="d-none" id="hap-wrapper">
+                    <div class="" id="hap-wrapper">
                         <div class="hap-player-holder">
                             <div class="hap-player-thumb-wrapper">
                                 <div class="hap-player-thumb"></div>
@@ -135,13 +135,13 @@
                         <div class="hap-playlist-holder">
                             <div class="hap-playlist-filter-msg"><p>NOTHING FOUND!</p></div>
                             <div class="hap-playlist-inner">
-                                <div class="hap-playlist-content">
-                                    <div class="hap-playlist-item" data-type="audio" data-mp3="audio/Serum C.mp3">
-                                        <a class="hap-playlist-non-selected" href="#">
-                                            <span class="hap-playlist-title">Serum C</span>
-                                        </a>
-                                    </div>
-                                </div>
+                                <!--<div class="hap-playlist-content">-->
+                                    <!--<div class="hap-playlist-item" data-type="audio" data-mp3="audio/Serum C.mp3">-->
+                                        <!--<a class="hap-playlist-non-selected" href="#">-->
+                                            <!--<span class="hap-playlist-title">Serum C</span>-->
+                                        <!--</a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
                             </div>
                             <div class="hap-preloader"></div>
                             <div class="hap-bottom-bar">
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-none">
+                    <div class="">
                         <h4 class="text-center">Concept Notes</h4>
                         <table class="table">
                             <thead class="thead-dark text-uppercase">
@@ -159,17 +159,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>title</td>
-                                    <td>note</td>
-                                </tr>
+                            <tr>
+                                <td colspan="2">no concept notes.</td>
+                            </tr>
                             </tbody>
+                            <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td>title</td>-->
+                                    <!--<td>note</td>-->
+                                <!--</tr>-->
+                            <!--</tbody>-->
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card d-none">
+        <div id="spottingCard" class="card">
             <div class="card-header" id="spotting">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSpotting" aria-expanded="true"
@@ -181,12 +186,16 @@
             <div id="collapseSpotting" class="collapse show" aria-labelledby="spotting" data-parent="#musicComposingAccordion">
                 <div class="card-body">
                     <div class="mb-4 d-none"><a href="#">Spotting Session Notes</a></div>
-                    <div class="d-none">
-                        <h4>Music Spotting Notes</h4>
-                        <dl class="row">
-                            <dd class="col-sm-2">Last Updated</dd>
-                            <dt class="col-sm-10">Day of Week, Month Day Year</dt> <!-- Ex: Monday, January 14th 2019 -->
-                        </dl>
+                    <div class="row">
+                        <div class="col-sm-4 text-left"><h4>Music Spotting Notes</h4></div>
+                        <div class="col-sm-8 text-right">
+                            <dl class="row">
+                                <dd class="col">Last Updated</dd>
+                                <dt class="col">Thursday, January 17th 2019</dt>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
                         <table class="table">
                             <thead class="thead-dark text-uppercase">
                                 <tr>
@@ -198,20 +207,25 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>cue no</td>
-                                    <td>cue title</td>
-                                    <td>00:00:00:00</td>
-                                    <td>00:00:00:00</td>
-                                    <td>00:00</td>
-                                </tr>
+                            <tr>
+                                <td colspan="5">no spotting notes.</td>
+                            </tr>
                             </tbody>
+                            <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td>cue no</td>-->
+                                    <!--<td>cue title</td>-->
+                                    <!--<td>00:00:00:00</td>-->
+                                    <!--<td>00:00:00:00</td>-->
+                                    <!--<td>00:00</td>-->
+                                <!--</tr>-->
+                            <!--</tbody>-->
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card d-none">
+        <div id="cuesCard" class="card">
             <div class="card-header" id="cues">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCues" aria-expanded="true"
                         aria-controls="collapseCues">
@@ -228,7 +242,7 @@
                         </ul>
                     </div>
                     <!-- https://www.steegle.com/apps-script/google-drive-embed-gadget -->
-                    <!-- <iframe src="PASTE URL HERE" style="width:100%; height:400px; border:0;"></iframe> -->
+                    <!--<iframe src="PASTE URL HERE" style="width:100%; height:400px; border:0;"></iframe>-->
                 </div>
             </div>
         </div>
