@@ -236,7 +236,7 @@
                 </div>
             </div>
         </div>
-        <div class="card d-none">
+        <div class="card">
             <div class="card-header" id="spotting">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSpotting" aria-expanded="true"
@@ -248,12 +248,11 @@
             <div id="collapseSpotting" class="collapse show" aria-labelledby="spotting" data-parent="#musicComposingAccordion">
                 <div class="card-body">
                     <div class="mb-4 d-none"><a href="#">Spotting Session Notes</a></div>
-                    <div class="d-none">
-                        <h4>Music Spotting Notes</h4>
-                        <dl class="row">
-                            <dd class="col-sm-2">Last Updated</dd>
-                            <dt class="col-sm-10">Day of Week, Month Day Year</dt>
-                        </dl>
+                    <div class="row">
+                        <div class="col-sm-4 text-left"><h4>Music Spotting Notes</h4></div>
+                        <div class="col-sm-8 text-right"><b>Thursday, January 17th 2019</b></div>
+                    </div>
+                    <div class="row">
                         <table class="table">
                             <thead class="thead-dark text-uppercase">
                             <tr>
@@ -266,19 +265,24 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>cue no</td>
-                                <td>cue title</td>
-                                <td>00:00:00:00</td>
-                                <td>00:00:00:00</td>
-                                <td>00:00</td>
+                                <td colspan="5">no spotting notes.</td>
                             </tr>
                             </tbody>
+                            <!--<tbody>-->
+                            <!--<tr>-->
+                            <!--<td>cue no</td>-->
+                            <!--<td>cue title</td>-->
+                            <!--<td>00:00:00:00</td>-->
+                            <!--<td>00:00:00:00</td>-->
+                            <!--<td>00:00</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card d-none">
+        <div class="card">
             <div class="card-header" id="cues">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCues" aria-expanded="true"
                         aria-controls="collapseCues">
@@ -294,10 +298,14 @@
                                                                                target="_blank">here</a> to go to your Google Drive folder.</li>
                         </ul>
                     </div>
-                    <!-- <iframe src="PASTE URL HERE" style="width:100%; height:400px; border:0;"></iframe> -->
+                     <iframe src="https://script.google.com/macros/s/AKfycbxfoHRXqwq6_QK1K6Cw6v_RJa-TSCM_kkVAbi2fj2p3rv9pyboy/exec?folderid=1ECgV2RQ5Jnvjt5yxLn_yDjlQ9X7qFtO2&hideowners=hide&orderby=modifiedDate%20desc" style="width:100%; height:400px; border:0;"></iframe>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="mt-3">
+        <iframe id="fileUploader" src="https://driveuploader.com/upload/WXe2hGaf0d/embed/" style="width:100%; height:200px; border:0;"></iframe>
+        <p>To upload additional files after completing an upload click the reload button <a class="btn btn-primary btn-sm" href="javascript:reloadFileUploader();">RELOAD</a></p>
     </div>
 </div>
 
