@@ -31,7 +31,10 @@ $(document).ready(function() {
     player = $("#hap-wrapper").hap(settings);
 });
 
-function reloadFileUploader() {
-    var iframe = document.getElementById("fileUploader");
-    iframe.src = iframe.src;
+function refreshUpload() {
+    var fileUploader = document.getElementById("fileUploader");
+    fileUploader.src = fileUploader.src;
+
+    var uploadView = document.getElementById("uploadView");
+    uploadView.src = uploadView.src;
 }
