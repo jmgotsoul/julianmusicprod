@@ -46,6 +46,8 @@ $(document).ready(function() {
             clearTimeout(uploadViewTimer);
         }
     });
+
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 function refreshUploadView() {
@@ -60,7 +62,7 @@ function refreshUploadView() {
     uploadViewTimer = setTimeout(refreshUploadView, 15000);
 }
 
-function refreshFileUploader() {
+function resetFileUploader() {
     var fileUploader = document.getElementById('fileUploader');
     fileUploader.src = fileUploader.src;
 }
