@@ -8,7 +8,7 @@ $(document).ready(function() {
         sourcePath: "",
         activePlaylist: "",
         activeItem: 0,
-        volume: 0.5,
+        volume: 0.75,
         autoPlay: true,
         preload: "auto",
         randomPlay: false,
