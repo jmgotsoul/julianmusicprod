@@ -1,4 +1,6 @@
 var player;
+var uploadViewTimer;
+var executeRefreshOfUploadView = false;
 
 $(document).ready(function() {
     $('.collapse').collapse();
@@ -29,12 +31,36 @@ $(document).ready(function() {
     };
 
     player = $("#hap-wrapper").hap(settings);
+
+    var musicComposingAccordion = $('#musicComposingAccordion');
+
+    musicComposingAccordion.on('show.bs.collapse', function(e) {
+       if (e.target.id === 'collapseUpload') {
+           refreshUploadView();
+       }
+    });
+
+    musicComposingAccordion.on('hide.bs.collapse', function(e) {
+        if (e.target.id === 'collapseUpload') {
+            console.log('stopping refresh of upload view');
+            clearTimeout(uploadViewTimer);
+        }
+    });
 });
 
-function refreshUpload() {
-    var fileUploader = document.getElementById("fileUploader");
-    fileUploader.src = fileUploader.src;
+function refreshUploadView() {
+    if (executeRefreshOfUploadView) {
+        console.log('refreshing upload view');
+        var uploadView = document.getElementById('uploadView');
+        uploadView.src = uploadView.src;
+    } else {
+        executeRefreshOfUploadView = true;
+    }
 
-    var uploadView = document.getElementById("uploadView");
-    uploadView.src = uploadView.src;
+    uploadViewTimer = setTimeout(refreshUploadView, 15000);
+}
+
+function refreshFileUploader() {
+    var fileUploader = document.getElementById('fileUploader');
+    fileUploader.src = fileUploader.src;
 }
