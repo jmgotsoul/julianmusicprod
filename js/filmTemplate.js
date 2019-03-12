@@ -42,7 +42,6 @@ $(document).ready(function() {
 
     musicComposingAccordion.on('hide.bs.collapse', function(e) {
         if (e.target.id === 'collapseUpload') {
-            console.log('stopping refresh of upload view');
             clearTimeout(uploadViewTimer);
         }
     });
