@@ -9,8 +9,15 @@ a:link,
 a:visited {
     color: #5d5c61;
 }
+.film-info a,
+.film-info a:link,
+.film-info a:visited {
+    color:#938e94;
+}
 a:hover,
-a:active{
+a:active,
+.film-info a:hover,
+.film-info a:active {
     color: #557A95;
 }
 a.btn {
