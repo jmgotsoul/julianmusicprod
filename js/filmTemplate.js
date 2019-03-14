@@ -63,5 +63,7 @@ function refreshUploadView() {
 
 function resetFileUploader() {
     var fileUploader = document.getElementById('fileUploader');
-    fileUploader.src = fileUploader.src;
+    if (fileUploader != null) {
+        fileUploader.src = fileUploader.src;
+    }
 }
