@@ -1,11 +1,11 @@
 /* ==============================
    MAIN COLOR
-   ----- dark #171724 ----------
+   ----- dark #020202 ----------
    
    ALL COLORS
    green - #00c8aa
    blue - #00b2ca
-   dark - #171724
+   dark - #020202
    red-1 - #ff0030
    red-2 - #FF4C05
    dark-blue - #3446FF
@@ -16,88 +16,88 @@
    default - #222
    ============================== */
 body ::-moz-selection {
-  background: #171724;
+  background: #020202;
 }
 body ::selection {
-  background: #171724;
+  background: #020202;
 }
 .progress-box .progress-bar {
-  background-color: #171724;
+  background-color: #020202;
 }
 .service-item i {
-  color: #171724;
+  color: #020202;
 }
 .service-item:hover {
-  border-color: #171724;
+  border-color: #020202;
 i
 }
 .filter li a:hover {
-  border-bottom: 1px solid #171724;
+  border-bottom: 1px solid #020202;
 }
 .filter li.active a {
-  border-bottom: 1px solid #171724;
+  border-bottom: 1px solid #020202;
 }
 figure.effect-hover figcaption {
-  background: #171724;
+  background: #020202;
 }
 .team-item figcaption small {
-  color: #171724;
+  color: #020202;
 }
 .pricing-inner:hover {
-  border-color: #171724;
+  border-color: #020202;
 }
 .pricing-inner:hover .pricing-icon,
 .pricing-inner:hover .pricing-title {
-  color: #171724;
+  color: #020202;
 }
 .pricing-main .pricing-inner {
-  border-color: #171724;
+  border-color: #020202;
 }
 .pricing-main .pricing-icon,
 .pricing-main .pricing-title {
-  color: #171724;
+  color: #020202;
 }
 .pricing-main .pricing-button .btn {
-  background: #171724;
+  background: #020202;
 }
 .contact-item span,
 .contact-item i {
-  color: #171724;
+  color: #020202;
 }
 .btn-continue-reading {
-  color: #171724;
+  color: #020202;
 }
 .btn-continue-reading:hover {
-  color: #171724;
+  color: #020202;
 }
 .pagination > li.active a,
 .pagination > li.active span {
-  border-color: #171724;
-  color: #171724;
+  border-color: #020202;
+  color: #020202;
 }
 .features-icon {
-  color: #171724;
+  color: #020202;
 }
 .btn-coffee.btn-color {
-  background: #171724;
+  background: #020202;
 }
 .btn-coffee.btn-color-w {
-  border: 2px solid #171724;
-  background: #171724;
+  border: 2px solid #020202;
+  background: #020202;
 }
 span.higl {
-  color: #171724 !important;
+  color: #020202 !important;
 }
 .team-slider .owl-page span {
-  border: 1px solid #171724;
+  border: 1px solid #020202;
 }
 .team-slider .owl-page.active span {
-  background: #171724;
+  background: #020202;
 }
 @media only screen and (max-width: 768px) {
   .overlay-left {
     width: 100%;
-    background: #171724;
+    background: #020202;
   }
   .overlay-left div,
   .overlay-left h1 {
