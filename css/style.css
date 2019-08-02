@@ -625,6 +625,11 @@ section h3.light {
   color: black;
 }
 
+.fa-spotify {
+  background: white;
+  color: #1ED660;
+}
+
 .iframe-container {
   position: relative;
   overflow: hidden;
