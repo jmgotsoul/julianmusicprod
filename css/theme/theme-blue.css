@@ -2,7 +2,7 @@ body::-moz-selection{background:#00b2ca;}
 body::selection{background:#00b2ca;}
 .progress-box .progress-bar{background-color:#00b2ca;}
 .service-item i{color:#00b2ca;}
-.service-item:hover{border-color:#00b2ca;i}
+.service-item:hover{border-color:#00b2ca;}
 .filter li a:hover{border-bottom:1px solid #00b2ca;}
 .filter li.active a{border-bottom:1px solid #00b2ca;}
 figure.effect-hover figcaption{background:#00b2ca;}

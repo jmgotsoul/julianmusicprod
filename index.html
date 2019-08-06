@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script async type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async type="text/javascript" src="https://use.fontawesome.com/11af50d614.js"></script>
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.9/SmoothScroll.min.js"></script>
+
+    <script async type="text/javascript" src="js/plagins.js"></script>
+    <script async type="text/javascript" src="js/main.min.js"></script>
+    <script async type="text/javascript" src="js/contact_form.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129303141-1"></script>
     <script>
@@ -10,6 +21,7 @@
 
         gtag('config', 'UA-129303141-1');
     </script>
+    <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -451,31 +463,10 @@
             </div>
         </div>
         <a href="#top" class="scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+        <!-- this div is only here to make js not encounter an error. need to figure out how to fix js. -->
+        <div class="progress-bar"></div>
     </footer>
 </div>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-<script async type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script async type="text/javascript" src="https://use.fontawesome.com/11af50d614.js"></script>
-<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.9/SmoothScroll.min.js"></script>
-
-<script async type="text/javascript" src="js/plagins.js"></script>
-<script async type="text/javascript" src="js/main.min.js"></script>
-<script async type="text/javascript" src="js/contact_form.min.js"></script>
-<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-<script>
-    $(document).ready(function() {
-        var tableRowClickFunction = function() {
-            var anchor = $(this).find("a");
-            if (anchor.length > 0) anchor[0].click();
-        };
-
-        $('#cast-table tr').click(tableRowClickFunction);
-        $('#filmmakers-table tr').click(tableRowClickFunction);
-    });
-</script>
 </body>
 </html>
