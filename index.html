@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- load these synchronously to ensure they are loaded before other scripts need them -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/mobile-detect.min.js"></script>
+
     <script async type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -12,6 +15,7 @@
     <script async type="text/javascript" src="js/plagins.js"></script>
     <script async type="text/javascript" src="js/main.min.js"></script>
     <script async type="text/javascript" src="js/contact_form.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129303141-1"></script>
     <script>
@@ -32,8 +36,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Julian Montgomery - Composer and Music Producer</title>
+    <link rel="manifest" href="site.webmanifest">
+
+    <title>Julian Montgomery (Composer, Sound Designer, and Music Producer)</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -118,7 +123,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>Julian is a versatile and diverse composer with the ability to compose music across many different styles and film genres.
-                        Some of his recent work includes composing smooth R&B/Soul and orchestral music for the short film, The Elevator, written
+                        Some of his recent work includes composing smooth R&B/Soul and orchestral music for the short film, <i>The Elevator</i>, written
                         and directed by Shanay J. Russell. The Elevator is a drama about the challenges of marriage. He recently composed
                         beautifully sad music consisting primarily of piano and strings for a drama about depression called <i>The Sharp Edge</i>
                         created and directed by Walt Hermosa. He also composed a hybrid of hip-hop and
@@ -130,6 +135,10 @@
                         He is also a Composer with the music libraries,
                         <a href="http://www.burnettmusicgroup.com/"><strong>Burnett Music Group</strong></a> and
                         <a href="http://www.scorekeepersmusic.com/"><strong>SCOREKEEPERS</strong></a>.</p>
+                    <p>As a Sound Designer, Julian custom designs many of the synth sounds he uses in his music. He primarily uses
+                        subtractive, FM, sample-based, wavetable, and granular synthesis in his designs. As a small way of giving back to the music
+                        community, Julian creates what he calls, <a href="soundpacks.html"><strong>JMP Sound Packs</strong></a>. These are small
+                        Omnisphere libraries that are made available free to the public.</p>
                     <p>As a Music Producer, Julian has produced projects for several independent artists such as Tryenyse Jones, Soulyrik and Kenny
                         Passmore, as well as multiple solo projects. Julian has also produced two volumes of the project, <i>Soul Cutz</i>. This
                         project is a unique endeavor totally funded by Julian as an avenue to invest in the music of other artists who use music as
@@ -425,15 +434,16 @@
                 <div class="col-md-12 text-center"><h1>SOCIAL MEDIA</h1></div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <a class="twitter-timeline" data-height="400" data-theme="dark"
+                <div class="col-md-12 text-center">
+                    <a class="twitter-timeline" data-height="400" data-width="600" data-theme="dark"
                        href="https://twitter.com/julianmusicprod?ref_src=twsrc%5Etfw">Tweets by julianmusicprod</a>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <a class="twitter-timeline" data-height="400" data-theme="dark"
-                       href="https://twitter.com/julianmusicprod/likes?ref_src=twsrc%5Etfw">Tweets Liked by @julianmusicprod</a>
-                </div>
             </div>
+<!--            <div class="row">-->
+<!--                <div class="col-md-12">-->
+<!--                    <a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/julianmusicprod/likes?ref_src=twsrc%5Etfw">Tweets Liked by @julianmusicprod</a>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="row">
                 <div class="text-center social-links mt-20 col-md-12">
                     <a href="https://twitter.com/julianmusicprod" class="twitter-follow-button" data-show-count="false">Follow @julianmusicprod</a>
@@ -463,9 +473,6 @@
             </div>
         </div>
         <a href="#top" class="scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
-        <!-- this div is only here to make js not encounter an error. need to figure out how to fix js. -->
-        <div class="progress-bar"></div>
     </footer>
 </div>
 </body>

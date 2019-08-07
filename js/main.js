@@ -1,15 +1,15 @@
 (function() {
   'use strict';
 
-  // Mobile detect
-  var desktop_nav, height_line, init_classic_menu, init_classic_menu_resize, init_navigation_scroll, init_progress_bar, init_skrollr, init_wow, mobileTest, mobile_nav;
+  var desktop_nav, height_line, init_classic_menu, init_classic_menu_resize, init_navigation_scroll, init_skrollr, init_wow, mobileTest, mobile_nav;
 
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
-    mobileTest = true;
-    $("html").addClass("mobile");
-  } else {
+  // Mobile detect
+  if (new MobileDetect(window.navigator.userAgent).mobile() == null) {
     mobileTest = false;
     $("html").addClass("no-mobile");
+  } else {
+    mobileTest = true;
+    $("html").addClass("mobile");
   }
 
   // Page Loader
@@ -33,29 +33,6 @@
   };
 
   init_skrollr();
-
-  // Progress Bar
-  init_progress_bar = function() {
-    $(".progress-bar").appear(function() {
-      var addPerstange, count, progressContainer, progressPerstange, step;
-      progressContainer = $(this);
-      progressPerstange = progressContainer.attr("data-progress");
-      step = 5;
-      count = 30;
-      addPerstange = function() {
-        progressContainer.css("width", count + "%");
-        if (count < progressPerstange) {
-          count += step;
-          setTimeout(addPerstange, 40);
-        }
-      };
-      addPerstange();
-    });
-  };
-
-  if (($(window).width() >= 1024) && (mobileTest === false)) {
-    init_progress_bar();
-  }
 
   // Navigation Panel
   height_line = function(height_object, height_donor) {
